@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="{{ site.description | default: page.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ site.description | default: page.description }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="twitter:description" content="{{ site.description | default: page.description }}">
+    
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script defer src="{{ '/assets/js/github-stats.js' | relative_url }}"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        {{ content }}
+        
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

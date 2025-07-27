@@ -1,0 +1,38 @@
+# Site configuration for GitHub Pages
+title: "cogwheel"
+description: "Pragmatic contributions to open-source infrastructure"
+url: "https://cogwheel.app"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: null
+plugins:
+  - jekyll-sass-converter
+
+# GitHub Pages compatibility
+safe: true
+incremental: false
+
+# Sass configuration
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - README.md
+  - .gitignore
+
+# SEO and meta
+author: "cogwheel"
+lang: "en"
+
+# Social links
+github_username: cogwheel0
+email: cogwheel@cogwheel.app

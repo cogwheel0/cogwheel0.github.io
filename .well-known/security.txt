@@ -1,0 +1,4 @@
+Contact: mailto:contact@cogwheel.app
+Expires: 2025-12-31T23:59:59Z
+Preferred-Languages: en
+Canonical: https://cogwheel.app/.well-known/security.txt

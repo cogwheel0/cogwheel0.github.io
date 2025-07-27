@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cogwheel.app/sitemap.xml
+
+# Optimize crawl budget
+Crawl-delay: 1
+
+# Block sensitive areas (if any)
+Disallow: /vendor/
+Disallow: /.git/
+Disallow: /_site/
