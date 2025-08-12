@@ -38,10 +38,12 @@ layout: default
     <section class="section section--projects">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
+            {% assign projects = site.data.projects | default: empty %}
+            {% for p in projects %}
             <article class="project-card">
                 <h3 class="project-title">
-                    <a href="https://github.com/cogwheel0/luci-mobile" 
-                       target="_blank" 
+                    <a href="{{ p.url }}"
+                       target="_blank"
                        rel="noopener noreferrer"
                        class="project-link">
                         Loading...
@@ -54,6 +56,7 @@ layout: default
                     <!-- GitHub stats will be dynamically inserted here -->
                 </div>
             </article>
+            {% endfor %}
         </div>
     </section>
 </main>

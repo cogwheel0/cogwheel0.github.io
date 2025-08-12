@@ -1,0 +1,4 @@
+# Ordered list of projects to display on the homepage
+# Add more entries with a "url" field. GitHub links will auto-populate stats.
+- url: https://github.com/cogwheel0/luci-mobile
+- url: https://github.com/cogwheel0/conduit
